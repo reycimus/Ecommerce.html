@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class ="body1">
+    <header>
+        <h1>Black Thread</h1>
+        <nav>
+            <a href="Ecommerce.html">Home</a>
+            <a href="cart.html">Cart (<span id="cart-count">0</span>)</a>
+            <div class="dropdown">
+        <button class="dropbtn">Shop</button>
+        <div class="dropdown-content">
+            <a href="men.html">Men’s Wear</a>
+            <a href="women.html">Women’s Wear</a>
+            <a href="kids.html">Kids’ Wear</a>
+        </div>
+    </div>
+            <a href="aboutus.html">About Us</a>
+            <a href="aboutDevelopers.html">About Developer</a>
+        </nav>
+    </header>
+
+    
+    <section class="cart">
+        <h2>Your Cart</h2>
+        <ul id="cart-items"></ul>
+        <p>Total: php<span id="total-price">0</span></p>
+        <button onclick="clearCart()">Clear Cart</button>
+    </section>
+
+    <script src="cart.js"></script>
+    
+    
+</body>
+</html>
